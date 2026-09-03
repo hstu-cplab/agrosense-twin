@@ -1,33 +1,8 @@
-# AgroSense Control
-
-<p align="center">
-  <img src="images/demo video screen cast.gif" alt="AgroSense Control Demo" width="800">
-</p>
-
-<p align="center">
-  <b>Smart Farming Platform — Real-Time Environmental Monitoring & AI-Powered Crop Decision Support</b>
-</p>
-
-<p align="center">
-  <a href="#features"><img src="https://img.shields.io/badge/Features-00C853?style=for-the-badge" alt="Features"></a>
-  <a href="#hardware"><img src="https://img.shields.io/badge/Hardware-2979FF?style=for-the-badge" alt="Hardware"></a>
-  <a href="#circuit-diagram"><img src="https://img.shields.io/badge/Circuit_Diagram-FF6D00?style=for-the-badge" alt="Circuit Diagram"></a>
-  <a href="#folder-structure"><img src="https://img.shields.io/badge/Folder_Structure-6200EA?style=for-the-badge" alt="Folder Structure"></a>
-  <a href="#tech-stack"><img src="https://img.shields.io/badge/Tech_Stack-D50000?style=for-the-badge" alt="Tech Stack"></a>
-</p>
-
----
-
-## Overview
-
 **AgroSense Control** is a **digital twin** of the BRAC Nursery weather station at
 Nilphamari, Bangladesh. It carries every station sample through the full
 five-layer twin stack — physical asset → data acquisition → integration &
 processing → model & simulation → visualization & control — and renders that
 orchestration live.
-
-See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the layer-by-layer breakdown and
-which module implements each stage.
 
 The system replaces guesswork with live sensor data, a virtual replica, derived
 physics and transparent crop analytics — enabling faster, data-backed decisions
@@ -259,12 +234,6 @@ npm run lint
 - Activate anomaly-detection model for automated alerts
 - Add multi-operator role management
 - Deploy SMS gateway for field team notifications
-
----
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
