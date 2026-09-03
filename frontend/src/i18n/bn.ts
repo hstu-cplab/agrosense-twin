@@ -1,0 +1,268 @@
+/**
+ * Bangla (বাংলা) translations. Keys are the exact English source strings.
+ * Missing keys fall back to English, so partial coverage degrades gracefully.
+ */
+export const BN: Record<string, string> = {
+  /* ---- brand / shell ---- */
+  "AgroSense Twin": "অ্যাগ্রোসেন্স টুইন",
+  "Live feed": "লাইভ ফিড",
+  "Simulator feed": "সিমুলেটর ফিড",
+  "Simulation mode": "সিমুলেশন মোড",
+  "Simulation Mode": "সিমুলেশন মোড",
+  "Enter Simulation Mode": "সিমুলেশন মোডে প্রবেশ করুন",
+  "Exit Simulation": "সিমুলেশন থেকে বেরোন",
+  "Sign Out": "সাইন আউট",
+  "Sign In": "সাইন ইন",
+  "Operator Sign Out": "অপারেটর সাইন আউট",
+  "ACTIVE ZONE:": "সক্রিয় জোন:",
+  "Operator": "অপারেটর",
+  "Demo Operator": "ডেমো অপারেটর",
+  "Access Pending": "অ্যাক্সেস অপেক্ষমাণ",
+  "Backend notice": "ব্যাকএন্ড নোটিশ",
+  "No recent Firestore reading — the twin is running on the Physical-Layer simulator.":
+    "সাম্প্রতিক ফায়ারস্টোর রিডিং নেই — টুইনটি ফিজিক্যাল-লেয়ার সিমুলেটরে চলছে।",
+  "Theme": "থিম",
+  "Language": "ভাষা",
+  "Light": "লাইট",
+  "Dark": "ডার্ক",
+
+  /* ---- nav sections ---- */
+  "Orchestration": "অর্কেস্ট্রেশন",
+  "Sensing & Ingest": "সেন্সিং ও ইনজেস্ট",
+  "Model & Simulation": "মডেল ও সিমুলেশন",
+  "System": "সিস্টেম",
+
+  /* ---- nav items (top tabs) ---- */
+  "Architecture": "আর্কিটেকচার",
+  "Dashboard": "ড্যাশবোর্ড",
+  "Sensors": "সেন্সর",
+  "3D Twin": "থ্রিডি টুইন",
+  "Yield Forecast": "ফলন পূর্বাভাস",
+  "Disease Forecast": "রোগ পূর্বাভাস",
+  "Twin Architecture": "টুইন আর্কিটেকচার",
+  "Command Dashboard": "কমান্ড ড্যাশবোর্ড",
+  "Sensor Telemetry": "সেন্সর টেলিমেট্রি",
+  "3D Digital Twin": "থ্রিডি ডিজিটাল টুইন",
+  "Crop Intelligence": "শস্য বিশ্লেষণ",
+  "Crop Disease Risk": "শস্য রোগ ঝুঁকি",
+  "Operations Config": "অপারেশন কনফিগ",
+  "Operator Profile": "অপারেটর প্রোফাইল",
+  "Dashboard Overview": "ড্যাশবোর্ড ওভারভিউ",
+  "Sensor Readings": "সেন্সর রিডিং",
+  "Digital Twin": "ডিজিটাল টুইন",
+  "System Operations": "সিস্টেম অপারেশন",
+  "Supervisor Profile": "সুপারভাইজার প্রোফাইল",
+
+  /* ---- zone names ---- */
+  "Digital-Twin Layer Orchestration": "ডিজিটাল-টুইন লেয়ার অর্কেস্ট্রেশন",
+  "Central Mission Control": "কেন্দ্রীয় মিশন কন্ট্রোল",
+  "Sensor Readings & Dial Gauges": "সেন্সর রিডিং ও ডায়াল গেজ",
+  "3D Digital Twin Station": "থ্রিডি ডিজিটাল টুইন স্টেশন",
+  "Crop Suitability Model": "শস্য উপযোগিতা মডেল",
+  "Crop Disease Risk Assessment": "শস্য রোগ ঝুঁকি মূল্যায়ন",
+  "Crop Yield Forecast": "শস্য ফলন পূর্বাভাস",
+  "Crop Disease Forecast": "শস্য রোগ পূর্বাভাস",
+  "Calibrations & operations": "ক্যালিব্রেশন ও অপারেশন",
+  "Supervisor Clearance Metrics": "সুপারভাইজার ক্লিয়ারেন্স মেট্রিক্স",
+
+  /* ---- layers ---- */
+  "Physical Layer": "ফিজিক্যাল স্তর",
+  "Data Acquisition Layer": "ডেটা অ্যাকুইজিশন স্তর",
+  "Integration & Processing Layer": "ইন্টিগ্রেশন ও প্রসেসিং স্তর",
+  "Model & Simulation Layer": "মডেল ও সিমুলেশন স্তর",
+  "Visualization & Control Layer": "ভিজ্যুয়ালাইজেশন ও কন্ট্রোল স্তর",
+  "Physical Asset": "ফিজিক্যাল অ্যাসেট",
+  "Acquisition": "অ্যাকুইজিশন",
+  "Integration": "ইন্টিগ্রেশন",
+  "Visualization & Control": "ভিজ্যুয়ালাইজেশন ও কন্ট্রোল",
+  "The real asset + instrumentation": "প্রকৃত অ্যাসেট + যন্ত্রপাতি",
+  "Edge, radio & gateway transport": "এজ, রেডিও ও গেটওয়ে পরিবহন",
+  "Normalise, calibrate, validate, store": "নরমালাইজ, ক্যালিব্রেট, যাচাই, সংরক্ষণ",
+  "The digital core": "ডিজিটাল কোর",
+  "Human + autonomous interaction": "মানব + স্বয়ংক্রিয় মিথস্ক্রিয়া",
+
+  /* ---- architecture view ---- */
+  "Live orchestration of the five-layer digital-twin stack — every station sample is traced from the physical mast through acquisition, integration, the model core and the operator surface.":
+    "পাঁচ-স্তরের ডিজিটাল-টুইন স্ট্যাকের সরাসরি অর্কেস্ট্রেশন — প্রতিটি স্টেশন নমুনা ফিজিক্যাল মাস্ট থেকে অ্যাকুইজিশন, ইন্টিগ্রেশন, মডেল কোর ও অপারেটর সারফেস পর্যন্ত অনুসরণ করা হয়।",
+  "Source": "উৎস",
+  "Twin health": "টুইন স্বাস্থ্য",
+  "Fidelity": "নির্ভুলতা",
+  "Last tick": "সর্বশেষ টিক",
+  "Simulator": "সিমুলেটর",
+  "Firestore": "ফায়ারস্টোর",
+  "Nominal": "স্বাভাবিক",
+  "Degraded": "অবনমিত",
+  "Offline": "অফলাইন",
+  "Responsibilities": "দায়িত্বসমূহ",
+  "Wired components": "সংযুক্ত কম্পোনেন্ট",
+  "Stack": "স্ট্যাক",
+  "End-to-end": "এন্ড-টু-এন্ড",
+  "Residual drift": "অবশিষ্ট বিচ্যুতি",
+  "Latency": "লেটেন্সি",
+  "Rate": "হার",
+  "Waiting for first twin tick…": "প্রথম টুইন টিকের অপেক্ষায়…",
+  "LAYER": "স্তর",
+  "payload": "পেলোড",
+  "I/O": "ইন/আউট",
+  "Baseline warming up…": "বেসলাইন প্রস্তুত হচ্ছে…",
+  "Firestore has no reading inside the last hour, so the Physical Layer is being driven by the on-device environment simulator. Layers 2–5 run identically on either source.":
+    "গত এক ঘণ্টায় ফায়ারস্টোরে কোনো রিডিং নেই, তাই ফিজিক্যাল স্তরটি ডিভাইসের পরিবেশ সিমুলেটর দিয়ে চালানো হচ্ছে। স্তর ২–৫ উভয় উৎসেই একইভাবে চলে।",
+
+  /* ---- digital twin view ---- */
+  "Virtual replica of the BRAC Nursery mast — geometry, derived physics and a short-horizon forecast, all driven by the simulator feed.":
+    "ব্র্যাক নার্সারি মাস্টের ভার্চুয়াল প্রতিরূপ — জ্যামিতি, উদ্ভূত পদার্থবিদ্যা ও স্বল্প-মেয়াদি পূর্বাভাস, সবই সিমুলেটর ফিড দিয়ে চালিত।",
+  "Virtual replica of the BRAC Nursery mast — geometry, derived physics and a short-horizon forecast, all driven by the live feed.":
+    "ব্র্যাক নার্সারি মাস্টের ভার্চুয়াল প্রতিরূপ — জ্যামিতি, উদ্ভূত পদার্থবিদ্যা ও স্বল্প-মেয়াদি পূর্বাভাস, সবই লাইভ ফিড দিয়ে চালিত।",
+  "Spinning up the virtual replica…": "ভার্চুয়াল প্রতিরূপ চালু হচ্ছে…",
+  "What-if simulation": "হোয়াট-ইফ সিমুলেশন",
+  "What-if": "হোয়াট-ইফ",
+  "What-if active": "হোয়াট-ইফ সক্রিয়",
+  "Derived physics": "উদ্ভূত পদার্থবিদ্যা",
+  "Twin forecast": "টুইন পূর্বাভাস",
+  "Twin ↔ asset residuals": "টুইন ↔ অ্যাসেট অবশিষ্ট",
+  "Dew point": "শিশিরাঙ্ক",
+  "Feels like": "অনুভূত",
+  "Heat index": "তাপ সূচক",
+  "Wind chill": "বাতাসের শীতলতা",
+  "Abs. humidity": "পরম আর্দ্রতা",
+  "Solar load": "সৌর ভার",
+  "Comfort index": "স্বাচ্ছন্দ্য সূচক",
+  "Live": "লাইভ",
+  "Reset to live": "লাইভে ফিরুন",
+  "Temp": "তাপমাত্রা",
+  "Rain": "বৃষ্টি",
+  "Fidelity {n}%": "নির্ভুলতা {n}%",
+
+  /* ---- crop intelligence ---- */
+  "The Model Layer scores {n} candidate crops against the live station envelope and ranks them by agronomic fit for right now.":
+    "মডেল স্তর {n}টি সম্ভাব্য শস্যকে লাইভ স্টেশন সীমার বিপরীতে স্কোর করে এবং এখনকার কৃষিতাত্ত্বিক উপযোগিতা অনুযায়ী ক্রম দেয়।",
+  "Waiting for the first twin observation…": "প্রথম টুইন পর্যবেক্ষণের অপেক্ষায়…",
+  "Scenario override": "দৃশ্যকল্প ওভাররাইড",
+  "Apply": "প্রয়োগ",
+  "Air temp": "বায়ু তাপমাত্রা",
+  "Top pick": "শীর্ষ পছন্দ",
+  "fit score": "উপযোগিতা স্কোর",
+  "Full ranking": "সম্পূর্ণ ক্রম",
+  "Limiting factor:": "সীমাবদ্ধকারী উপাদান:",
+  "All factors inside envelope": "সব উপাদান সীমার মধ্যে",
+  "Strongly suited to current conditions": "বর্তমান পরিস্থিতির জন্য অত্যন্ত উপযোগী",
+  "Workable — watch the limiting factor": "চলনসই — সীমাবদ্ধকারী উপাদানে নজর রাখুন",
+  "Marginal — conditions are off-window": "প্রান্তিক — পরিস্থিতি সীমার বাইরে",
+  "Not advisable right now": "এখন পরামর্শযোগ্য নয়",
+
+  /* ---- disease risk ---- */
+  "Deterministic threshold rules evaluated against live station telemetry.":
+    "লাইভ স্টেশন টেলিমেট্রির বিপরীতে নির্ধারিত থ্রেশহোল্ড নিয়ম মূল্যায়ন করা হয়েছে।",
+  "Evaluated Inputs": "মূল্যায়িত ইনপুট",
+  "Composite Disease Risk Score": "সমন্বিত রোগ ঝুঁকি স্কোর",
+  "Conditions favourable": "পরিস্থিতি অনুকূল",
+  "Not favourable": "অনুকূল নয়",
+  "Cannot assess": "মূল্যায়ন সম্ভব নয়",
+  "Threshold Curves": "থ্রেশহোল্ড কার্ভ",
+  "Low": "নিম্ন",
+  "Med": "মাঝারি",
+  "High": "উচ্চ",
+
+  /* ---- sensor telemetry ---- */
+  "Physical instrument channels and the edge acquisition frame that carries them.":
+    "ফিজিক্যাল যন্ত্র চ্যানেল এবং সেগুলো বহনকারী এজ অ্যাকুইজিশন ফ্রেম।",
+  "Sensor Telemetry & Gauge Arrays": "সেন্সর টেলিমেট্রি ও গেজ অ্যারে",
+  "Acquisition Frame": "অ্যাকুইজিশন ফ্রেম",
+  "Signal": "সিগন্যাল",
+  "Link latency": "লিংক লেটেন্সি",
+  "Packet loss": "প্যাকেট লস",
+  "Battery": "ব্যাটারি",
+  "Station Health": "স্টেশন স্বাস্থ্য",
+  "Live Telemetry": "লাইভ টেলিমেট্রি",
+  "Wind Velocity & Azimuth": "বাতাসের গতি ও দিক",
+  "Precipitation Bucket Volume": "বৃষ্টি বাকেট আয়তন",
+  "Bento Array: Auxiliary Systems": "বেন্টো অ্যারে: সহায়ক সিস্টেম",
+  "Relative Humidity": "আপেক্ষিক আর্দ্রতা",
+  "Thermal Air Reading": "বায়ু তাপমাত্রা রিডিং",
+  "Atmosphere Pressure": "বায়ুচাপ",
+
+  /* ---- dashboard ---- */
+  "Welcome back, Operator": "স্বাগতম, অপারেটর",
+  "Location: Brac Nursery": "অবস্থান: ব্র্যাক নার্সারি",
+  "System Nominal": "সিস্টেম স্বাভাবিক",
+  "Surface Wind": "ভূপৃষ্ঠের বাতাস",
+  "Precipitation": "বৃষ্টিপাত",
+  "Atmosphere": "বায়ুমণ্ডল",
+  "Humidity": "আর্দ্রতা",
+  "Solar Irradiance": "সৌর বিকিরণ",
+  "Barometric Pressure": "বায়ুচাপ",
+  "Status: Normal": "অবস্থা: স্বাভাবিক",
+  "Status: Warning": "অবস্থা: সতর্কতা",
+  "Wind Speed": "বাতাসের গতি",
+  "Temperature": "তাপমাত্রা",
+  "Open Risk Assessment": "ঝুঁকি মূল্যায়ন খুলুন",
+
+  /* ---- settings ---- */
+  "System Operations & Configuration": "সিস্টেম অপারেশন ও কনফিগারেশন",
+  "Notifications & Broadcasting": "নোটিফিকেশন ও সম্প্রচার",
+  "Hardware Calibrations & Signals": "হার্ডওয়্যার ক্যালিব্রেশন ও সিগন্যাল",
+  "Recalibrate": "পুনঃক্যালিব্রেট",
+  "Data Refresh Interval": "ডেটা রিফ্রেশ বিরতি",
+
+  /* ---- profile ---- */
+  "Operator Profile ": "অপারেটর প্রোফাইল",
+
+  /* ---- login ---- */
+  "Monitor your environment, in real time.": "সরাসরি আপনার পরিবেশ পর্যবেক্ষণ করুন।",
+  "Join the monitoring network.": "মনিটরিং নেটওয়ার্কে যোগ দিন।",
+  "Operator Email": "অপারেটর ইমেইল",
+  "Access Code": "অ্যাক্সেস কোড",
+  "Create Account": "অ্যাকাউন্ট তৈরি করুন",
+  "Processing...": "প্রসেসিং...",
+
+  /* ---- common ---- */
+  "Rainfall": "বৃষ্টিপাত",
+  "Rainfall (window)": "বৃষ্টিপাত (উইন্ডো)",
+  "Cloud cover": "মেঘাচ্ছন্নতা",
+  "Air temperature": "বায়ুর তাপমাত্রা",
+  "Relative humidity": "আপেক্ষিক আর্দ্রতা",
+  "Wind": "বাতাস",
+  "Solar": "সৌর",
+  "Pressure": "চাপ",
+  "Held back by {factor}": "{factor} দ্বারা সীমাবদ্ধ",
+  "Solar irradiance": "সৌর বিকিরণ",
+
+  /* ---- yield forecast ---- */
+  "Attainable-yield estimate for every crop, driven by the {h}-hour forward model roll-out — environmental fit, heat, water balance, VPD and lodging risk.":
+    "প্রতিটি শস্যের অর্জনযোগ্য ফলনের অনুমান, {h}-ঘণ্টার ফরওয়ার্ড মডেল রোল-আউট দিয়ে চালিত — পরিবেশগত উপযোগিতা, তাপ, পানি ভারসাম্য, VPD ও নুয়ে পড়ার ঝুঁকি।",
+  "Modelled outlook": "মডেলকৃত পূর্বাভাস",
+  "Trend outlook": "প্রবণতা পূর্বাভাস",
+  "Environmental outlook": "পরিবেশগত পূর্বাভাস",
+  "Building the forecast roll-out…": "পূর্বাভাস রোল-আউট তৈরি হচ্ছে…",
+  "Best expected yield": "সর্বোচ্চ প্রত্যাশিত ফলন",
+  "of potential": "সম্ভাব্যতার",
+  "range": "পরিসর",
+  "conf": "আস্থা",
+  "of the": "মোট",
+  "attainable ceiling": "অর্জনযোগ্য সীমার",
+  "Yield multiplier breakdown": "ফলন গুণক বিশ্লেষণ",
+  "All crops · expected vs potential": "সব শস্য · প্রত্যাশিত বনাম সম্ভাব্য",
+  "Environmental fit": "পরিবেশগত উপযোগিতা",
+  "Heat stress": "তাপ চাপ",
+  "Water balance": "পানি ভারসাম্য",
+  "VPD stress": "VPD চাপ",
+  "Wind / lodging": "বাতাস / নুয়ে পড়া",
+  "Yield ≈ potential × fit^0.55 × Π(stress terms). Stress terms read the forward roll-out's mean heat, rain-vs-ET₀ balance, peak VPD and peak wind. This is decision-support, not a calibrated crop-growth model — treat the range, not the point value, as the answer.":
+    "ফলন ≈ সম্ভাব্যতা × উপযোগিতা^০.৫৫ × Π(চাপ পদ)। চাপ পদগুলো ফরওয়ার্ড রোল-আউটের গড় তাপ, বৃষ্টি-বনাম-ET₀ ভারসাম্য, সর্বোচ্চ VPD ও সর্বোচ্চ বাতাস পড়ে। এটি সিদ্ধান্ত-সহায়তা, ক্যালিব্রেটেড শস্য-বৃদ্ধি মডেল নয় — নির্দিষ্ট মান নয়, পরিসরটিকে উত্তর ধরুন।",
+
+  /* ---- disease forecast ---- */
+  "How disease favourability moves over the next 48 hours — the rule engine is evaluated against the forward model roll-out, not just the current reading.":
+    "আগামী ৪৮ ঘণ্টায় রোগ অনুকূলতা কীভাবে পরিবর্তিত হয় — নিয়ম ইঞ্জিন শুধু বর্তমান রিডিং নয়, ফরওয়ার্ড মডেল রোল-আউটের বিপরীতে মূল্যায়িত হয়।",
+  "Favourability outlook": "অনুকূলতা পূর্বাভাস",
+  "Now": "এখন",
+  "Trend": "প্রবণতা",
+  "Cell = number of transcribed diseases whose weather thresholds are met at that horizon.":
+    "ঘর = ঐ সময়ে যেসব রোগের আবহাওয়া থ্রেশহোল্ড পূরণ হয় তাদের সংখ্যা।",
+  "(forecast roll-out still warming up)": "(পূর্বাভাস রোল-আউট এখনও প্রস্তুত হচ্ছে)",
+  "Current rule detail": "বর্তমান নিয়ম বিবরণ",
+  "Favourable means the weather suits that pathogen — not that infection is occurring. Actual incidence also needs inoculum, a susceptible cultivar and leaf wetness the station cannot see. Use the outlook to time scouting and preventive sprays, then confirm in-field.":
+    "অনুকূল মানে আবহাওয়া ঐ রোগজীবাণুর জন্য উপযুক্ত — সংক্রমণ ঘটছে তা নয়। প্রকৃত সংক্রমণে ইনোকুলাম, সংবেদনশীল জাত ও পাতার আর্দ্রতাও দরকার যা স্টেশন দেখতে পায় না। স্কাউটিং ও প্রতিরোধমূলক স্প্রের সময় ঠিক করতে পূর্বাভাস ব্যবহার করুন, তারপর মাঠে নিশ্চিত করুন।",
+  "Establishing session...": "সেশন প্রতিষ্ঠা করা হচ্ছে...",
+  "Overriding the live feed — 3D scene, physics and crop scores reflect this scenario.":
+    "লাইভ ফিড ওভাররাইড করা হচ্ছে — থ্রিডি দৃশ্য, পদার্থবিদ্যা ও শস্য স্কোর এই দৃশ্যকল্প অনুযায়ী।",
+};

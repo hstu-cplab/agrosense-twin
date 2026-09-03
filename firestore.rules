@@ -1,0 +1,73 @@
+rules_version = '2';
+
+// AgroSense Control - Cloud Firestore security rules.
+//
+// Publish these in the Firebase console:
+//   Firestore Database -> Rules -> paste -> Publish
+//
+// These replace the default "test mode" rules, which contain a hard expiry
+// date and start rejecting every request with `permission-denied` once that
+// date passes.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Operator profiles. An operator may only ever touch their own document.
+    match /users/{uid} {
+      allow read, create, update: if isSignedIn() && request.auth.uid == uid;
+      allow delete: if false;
+    }
+
+    // Weather station telemetry.
+    //
+    // Readable by any signed-in operator. Writes are append-only and must
+    // carry a plausible, well-formed reading so a compromised client cannot
+    // poison the history or rewrite it.
+    match /sensor_readings/{readingId} {
+      allow read: if isSignedIn();
+
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasOnly([
+             'stationId', 'ts', 'timestamp',
+             'windSpeed', 'precipitation', 'temperature',
+             'humidity', 'light', 'pressure'
+           ])
+        && request.resource.data.keys().hasAll([
+             'stationId', 'ts',
+             'windSpeed', 'precipitation', 'temperature',
+             'humidity', 'light', 'pressure'
+           ])
+        && request.resource.data.stationId is string
+        && request.resource.data.ts is number
+        // Reject timestamps more than 5 minutes from server time.
+        && request.resource.data.ts >= request.time.toMillis() - 300000
+        && request.resource.data.ts <= request.time.toMillis() + 300000
+        && request.resource.data.windSpeed is number
+        && request.resource.data.windSpeed >= 0
+        && request.resource.data.windSpeed <= 150
+        && request.resource.data.precipitation is number
+        && request.resource.data.precipitation >= 0
+        && request.resource.data.temperature is number
+        && request.resource.data.temperature >= -100
+        && request.resource.data.temperature <= 100
+        && request.resource.data.humidity is number
+        && request.resource.data.humidity >= 0
+        && request.resource.data.humidity <= 100
+        && request.resource.data.light is number
+        && request.resource.data.light >= 0
+        && request.resource.data.pressure is number
+        && request.resource.data.pressure >= 0;
+
+      // History is immutable.
+      allow update, delete: if false;
+    }
+
+    // Deny everything not matched above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

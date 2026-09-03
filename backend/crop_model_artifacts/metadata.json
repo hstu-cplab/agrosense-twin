@@ -1,0 +1,41 @@
+{
+  "model_name": "K-Nearest Neighbors",
+  "feature_order": [
+    "temperature",
+    "humidity",
+    "light_intensity",
+    "air_pressure",
+    "rainfall"
+  ],
+  "classes": [
+    "apple",
+    "balsam apple",
+    "banana",
+    "blackgram",
+    "cauliflower",
+    "chickpea",
+    "chili",
+    "coconut",
+    "coffee",
+    "cotton",
+    "cucumber",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "rice",
+    "watermelon"
+  ],
+  "test_accuracy": 0.062,
+  "chance_level_accuracy": 0.04,
+  "trained_at": "2026-06-17T11:42:44.349759",
+  "data_quality_note": "Training data showed near-chance separability between classes (see notebook Section 3.7 ANOVA results). Test accuracy at or near chance level is therefore expected for this specific dataset, not necessarily a modeling bug. Re-train on data with real feature-label relationships if higher accuracy is required."
+}
