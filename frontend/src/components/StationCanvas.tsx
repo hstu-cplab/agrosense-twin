@@ -25,7 +25,7 @@ export default function StationCanvas({ data, vitality = 70 }: StationCanvasProp
     <div className="w-full h-[520px] rounded-xl overflow-hidden border border-hair-strong bg-app">
       <Canvas
         shadows
-        camera={{ position: [4.5, 2.2, 8.5], fov: 42 }}
+        camera={{ position: [4, 1.6, 7], fov: 42 }}
         gl={{ antialias: true }}
       >
         <color attach="background" args={[bg]} />
@@ -43,8 +43,8 @@ export default function StationCanvas({ data, vitality = 70 }: StationCanvasProp
         <OrbitControls
           makeDefault
           enablePan={false}
-          target={[0, 0.3, 0]}
-          minDistance={5}
+          target={[0, -0.2, 0]}
+          minDistance={4}
           maxDistance={18}
           minPolarAngle={0.15}
           maxPolarAngle={Math.PI / 2 - 0.02}
