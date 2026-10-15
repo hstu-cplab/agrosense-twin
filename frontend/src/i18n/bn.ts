@@ -265,4 +265,12 @@ export const BN: Record<string, string> = {
   "Establishing session...": "সেশন প্রতিষ্ঠা করা হচ্ছে...",
   "Overriding the live feed — 3D scene, physics and crop scores reflect this scenario.":
     "লাইভ ফিড ওভাররাইড করা হচ্ছে — থ্রিডি দৃশ্য, পদার্থবিদ্যা ও শস্য স্কোর এই দৃশ্যকল্প অনুযায়ী।",
+  "3D Field Crop Model": "থ্রিডি শস্য ফিল্ড মডেল",
+  "All Crops": "সকল ফসল",
+  "Mixed Nursery": "মিশ্র নার্সারি",
+  "Polyculture": "বহুমুখী ফসল",
+  "Suitability": "উপযোগিতা",
+  "Auto: Top Suitability": "স্বয়ংক্রিয়: সর্বোচ্চ উপযোগিতা",
+  "Interactive polyculture nursery field with mixed crop varieties":
+    "বিভিন্ন জাতের ফসলের সমন্বয়ে ইন্টারেক্টিভ মিশ্র নার্সারি মাঠ",
 };
